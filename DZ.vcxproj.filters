@@ -18,5 +18,8 @@
     <ClCompile Include="DZ.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IFELSEDZ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
