@@ -32,13 +32,13 @@ int main() {
 
     int _minutes = time_input;
     int _seconds = (time_input - minutes) * 100 + 0.5;
-    int _total_seconds = minutes * 60 + seconds;
+    int _total_seconds = _minutes * 60 + _seconds;
 
     double speed_mps = distance / _total_seconds;
     double speed_kph = speed_mps * 3.6;
 
     std::cout << "Дистанція: " << distance << " м." << std::endl;
-    std::cout << "Час: " << minutes << " хв " << seconds << " сек = " << _total_seconds << " сек." << std::endl;
+    std::cout << "Час: " << _minutes << " хв " << _seconds << " сек = " << _total_seconds << " сек." << std::endl;
     std::cout << "Ви бігли зі швидкістю " << speed_kph << " км/год." << std::endl;
 
     std::cout << "четверте завдання\n";
