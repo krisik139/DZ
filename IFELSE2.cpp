@@ -34,18 +34,26 @@ int main() {
 
     
     std::cout << "\nЗавдання 3" << std::endl;
+
     double s1, s2, s3;
     std::cout << "Введіть продажі для 3 менеджерів: ";
     std::cin >> s1 >> s2 >> s3;
 
-    auto calcSalary = [](double sales) {
-        double percent = (sales < 500) ? 0.03 : (sales <= 1000 ? 0.05 : 0.08);
-        return 200 + (sales * percent);
-        };
+    double sal1, sal2, sal3;
 
-    double sal1 = calcSalary(s1), sal2 = calcSalary(s2), sal3 = calcSalary(s3);
+    if (s1 < 500) sal1 = 200 + s1 * 0.03;
+    else if (s1 <= 1000) sal1 = 200 + s1 * 0.05;
+    else sal1 = 200 + s1 * 0.08;
 
-    double maxSal = (sal1 > sal2) ? (sal1 > sal3 ? sal1 : sal3) : (sal2 > sal3 ? sal2 : sal3);
+    if (s2 < 500) sal2 = 200 + s2 * 0.03;
+    else if (s2 <= 1000) sal2 = 200 + s2 * 0.05;
+    else sal2 = 200 + s2 * 0.08;
+
+    if (s3 < 500) sal3 = 200 + s3 * 0.03;
+    else if (s3 <= 1000) sal3 = 200 + s3 * 0.05;
+    else sal3 = 200 + s3 * 0.08;
+
+    double maxSal = (sal1 > sal2 && sal1 > sal3) ? sal1 : ((sal2 > sal3) ? sal2 : sal3);
 
     std::cout << "Зарплати: " << sal1 << ", " << sal2 << ", " << sal3 << std::endl;
     std::cout << "Найкращий менеджер отримав: " << maxSal + 200 << " (з премією)" << std::endl;
