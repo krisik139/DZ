@@ -17,8 +17,8 @@ int main() {
     
     double input;
     std::cin >> input;
-    int hryvnias = static_cast<int>(input);
-    int kopiykas = static_cast<int>(round((input - hryvnias) * 100));
+    int hryvnias = input;
+    int kopiykas = round((input - hryvnias) * 100);
     std::cout << hryvnias << " грн. " << kopiykas << " коп." << std::endl;
     
     std::cout << "третЇ завданн€\n";
@@ -30,8 +30,8 @@ int main() {
     std::cout << "¬вед≥ть час (хв.сек) = ";
     std::cin >> time_input;
 
-    int minutes = static_cast<int>(time_input);
-    int seconds = static_cast<int>((time_input - minutes) * 100);
+    int _minutes = time_input;
+    int _seconds = (time_input - minutes) * 100 + 0.5;
     int _total_seconds = minutes * 60 + seconds;
 
     double speed_mps = distance / _total_seconds;
