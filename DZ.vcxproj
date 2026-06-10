@@ -128,8 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DZ.cpp" />
+    <ClCompile Include="FUNC.cpp" />
+    <ClCompile Include="FUNCDWA.cpp" />
     <ClCompile Include="IFELSE2.cpp" />
     <ClCompile Include="IFELSEDZ.cpp" />
+    <ClCompile Include="STRINGS.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,5 +24,14 @@
     <ClCompile Include="IFELSE2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FUNC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STRINGS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FUNCDWA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
