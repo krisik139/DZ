@@ -132,6 +132,7 @@
     <ClCompile Include="FUNCDWA.cpp" />
     <ClCompile Include="IFELSE2.cpp" />
     <ClCompile Include="IFELSEDZ.cpp" />
+    <ClCompile Include="Cycleshz.cpp" />
     <ClCompile Include="STRINGS.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
